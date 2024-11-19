@@ -20,8 +20,11 @@ const Services = ({ servicesData }) => {
       </section>
 
       <section className="text-center mt-4 md:mt-6">
-        <Link>
-          <button className="text-lg md:text-xl bg-color-primary py-2 px-3 rounded-lg hover:scale-110 transition duration-200">
+        <Link to={"/all-services"}>
+          <button
+            data-aos="fade-up-right"
+            className="text-lg md:text-xl bg-color-primary py-2 px-3 rounded-lg hover:scale-110 transition duration-200"
+          >
             View ALL
           </button>
         </Link>
