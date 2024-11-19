@@ -1,0 +1,15 @@
+.active {
+  color: rgb(7, 177, 92) !important;
+  background-color: transparent !important;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 1.25rem;
+  transition: color 0.3s ease, text-decoration 0.3s ease, font-size 0.3s ease;
+}
+
+ul li {
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease, font-size 0.3s ease;
+}
