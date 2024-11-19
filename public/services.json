@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co.com/BjYrMhW/career-counselling.webp",
+    "service_name": "Career Counseling Sessions",
+    "category": "Online",
+    "description": "Personalized one-on-one sessions to explore career paths and set achievable goals.",
+    "pricing": 120,
+    "duration": "05-12-24 5:00 PM - 6:00 PM",
+    "counselor": "Dr. Emily Johnson",
+    "rating": 4.8
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co.com/6RZKxSQ/Resume-Review.jpg",
+    "service_name": "Resume Review",
+    "category": "Online",
+    "description": "Comprehensive analysis and feedback to enhance your resume's effectiveness.",
+    "pricing": 80,
+    "duration": "06-12-24 3:00 PM - 4:00 PM",
+    "counselor": "Mr. John Smith",
+    "rating": 4.7
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co.com/xsGyJrw/Interview-Preparation-Workshop.png",
+    "service_name": "Interview Preparation Workshop",
+    "category": "Group",
+    "description": "Interactive workshop to develop skills and confidence for job interviews.",
+    "pricing": 150,
+    "duration": "07-12-24 10:00 AM - 12:00 PM",
+    "counselor": "Ms. Sarah Lee",
+    "rating": 4.9
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co.com/94zxw6p/Skill-Development-Program.png",
+    "service_name": "Skill Development Program",
+    "category": "Offline",
+    "description": "Hands-on training to acquire new skills relevant to your career interests.",
+    "pricing": 200,
+    "duration": "08-12-24 9:00 AM - 5:00 PM",
+    "counselor": "Dr. Michael Brown",
+    "rating": 4.6
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co.com/MBTNxYK/Professional-Networking-Event.jpg",
+    "service_name": "Professional Networking Event",
+    "category": "Offline",
+    "description": "Opportunity to connect with industry professionals and expand your network.",
+    "pricing": 50,
+    "duration": "09-12-24 6:00 PM - 8:00 PM",
+    "counselor": "Ms. Laura Davis",
+    "rating": 4.5
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co.com/r4f4sKw/leadership.webp",
+    "service_name": "Leadership Training Course",
+    "category": "Online",
+    "description": "Develop leadership skills to advance in your career.",
+    "pricing": 250,
+    "duration": "10-12-24 1:00 PM - 4:00 PM",
+    "counselor": "Mr. David Wilson",
+    "rating": 4.8
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co.com/NNjkBKp/Job-Search-Strategies-Seminar.png",
+    "service_name": "Job Search Strategies Seminar",
+    "category": "Group",
+    "description": "Learn effective techniques to navigate the job market.",
+    "pricing": 100,
+    "duration": "11-12-24 2:00 PM - 5:00 PM",
+    "counselor": "Ms. Karen Martinez",
+    "rating": 4.7
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co.com/xq9MfBL/Career-Assessment-Test.jpg",
+    "service_name": "Career Assessment Test",
+    "category": "Online",
+    "description": "Evaluate your strengths and interests to identify suitable career options.",
+    "pricing": 60,
+    "duration": "12-12-24 11:00 AM - 12:00 PM",
+    "counselor": "Dr. Robert Clark",
+    "rating": 4.6
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co.com/dc8sRLC/Personal-Branding-Workshop.webp",
+    "service_name": "Personal Branding Workshop",
+    "category": "Group",
+    "description": "Learn how to build and promote your personal brand effectively.",
+    "pricing": 120,
+    "duration": "13-12-24 4:00 PM - 6:00 PM",
+    "counselor": "Ms. Jessica White",
+    "rating": 4.8
+  },
+  {
+    "id": 10,
+    "image": "https://i.ibb.co.com/5TQfZKR/Entrepreneurship-Coaching.webp",
+    "service_name": "Entrepreneurship Coaching",
+    "category": "Online",
+    "description": "Guidance and support for aspiring entrepreneurs to start their own business.",
+    "pricing": 300,
+    "duration": "14-12-24 5:00 PM - 7:00 PM",
+    "counselor": "Mr. Thomas Anderson",
+    "rating": 4.9
+  },
+  {
+    "id": 11,
+    "image": "https://i.ibb.co.com/mGNQ2z5/Work-Life-Balance-Seminar.jpg",
+    "service_name": "Work-Life Balance Seminar",
+    "category": "Group",
+    "description": "Strategies to maintain a healthy balance between professional and personal life.",
+    "pricing": 90,
+    "duration": "15-12-24 3:00 PM - 5:00 PM",
+    "counselor": "Ms. Angela Harris",
+    "rating": 4.7
+  },
+  {
+    "id": 12,
+    "image": "https://i.ibb.co.com/0Bxfk9d/Mentorship-Program.webp",
+    "service_name": "Mentorship Program",
+    "category": "Online",
+    "description": "Ongoing mentorship to guide you through your career development.",
+    "pricing": 500,
+    "duration": "16-12-24 6:00 PM - 7:30 PM",
+    "counselor": "Dr. Olivia Green",
+    "rating": 4.9
+  }
+]

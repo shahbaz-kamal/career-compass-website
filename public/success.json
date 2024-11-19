@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co.com/ctTnNj9/christian-ferrer.jpg",
+    "name": "Alice Thompson",
+    "career_goal": "Software Developer",
+    "description": "Alice utilized our resume review and interview preparation services to secure her dream job at a leading tech company. Her determination and our guidance made it possible.",
+    "testimonial": "Career Compass helped me refine my skills and stand out in my interviews. Highly recommend their services!",
+    "rating": 4.9,
+    "date": "10th Nov, 2024"
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co.com/47v63vb/aatik-tasneem.jpg",
+    "name": "John Carter",
+    "career_goal": "Entrepreneur",
+    "description": "John participated in the entrepreneurship coaching program and launched his startup within six months. Today, his business is thriving!",
+    "testimonial": "The mentorship and strategic planning from Career Compass were invaluable. I owe my success to their team!",
+    "rating": 5.0,
+    "date": "22nd Oct, 2024"
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co.com/x7rgb7c/hannah-busing.jpg",
+    "name": "Emily Johnson",
+    "career_goal": "Marketing Specialist",
+    "description": "Emily transitioned from a different field into marketing through our skill development program, securing a position at a renowned agency.",
+    "testimonial": "The personalized training sessions were exactly what I needed. Thank you, Career Compass!",
+    "rating": 4.8,
+    "date": "15th Sep, 2024"
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co.com/hCtkypL/brooke-cagle.jpg",
+    "name": "Michael Brown",
+    "career_goal": "Data Analyst",
+    "description": "Michael excelled in his role as a data analyst after leveraging the career assessment and leadership training services.",
+    "testimonial": "Career Compass helped me identify my strengths and enhance my leadership abilities. Truly life-changing!",
+    "rating": 4.9,
+    "date": "5th Aug, 2024"
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co.com/FKrJcqw/vinicius-wiesehofer.jpg",
+    "name": "Sophia Martinez",
+    "career_goal": "Graphic Designer",
+    "description": "Sophia built her personal brand and landed high-profile clients after attending the personal branding workshop.",
+    "testimonial": "The workshop gave me the tools and confidence to market myself effectively. I couldn’t be happier!",
+    "rating": 4.7,
+    "date": "19th Jul, 2024"
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co.com/sgHLD1W/Mishele-lee.jpg",
+    "name": "David Wilson",
+    "career_goal": "Product Manager",
+    "description": "David's career took a significant leap after completing the leadership training and networking event.",
+    "testimonial": "Career Compass connected me with the right people and provided training to excel in my career. A fantastic experience!",
+    "rating": 5.0,
+    "date": "11th Jun, 2024"
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co.com/X7TV0wX/emily-davis.jpg",
+    "name": "Rachel Green",
+    "career_goal": "Human Resources Specialist",
+    "description": "Rachel transitioned into HR by leveraging the career counseling and skills development programs.",
+    "testimonial": "Career Compass gave me clarity on my career path and the tools to succeed. Grateful for their support!",
+    "rating": 4.8,
+    "date": "3rd May, 2024"
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co.com/M6frTGv/jane-smith.jpg",
+    "name": "Brian Taylor",
+    "career_goal": "Cybersecurity Analyst",
+    "description": "Brian upgraded his technical skills and secured a high-paying role in cybersecurity with our mentorship program.",
+    "testimonial": "The mentorship sessions provided insight into industry demands and helped me stand out.",
+    "rating": 4.9,
+    "date": "25th Apr, 2024"
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co.com/3pCMNn8/sophia-johnson.jpg",
+    "name": "Jessica White",
+    "career_goal": "Healthcare Consultant",
+    "description": "Jessica used the networking opportunities and skill-building workshops to become a recognized consultant.",
+    "testimonial": "Career Compass opened doors I never thought possible. Their workshops are amazing!",
+    "rating": 4.9,
+    "date": "17th Mar, 2024"
+  },
+  {
+    "id": 10,
+    "image": "https://i.ibb.co.com/f02n7WV/mark-anderson.jpg",
+    "name": "Mark Anderson",
+    "career_goal": "Project Manager",
+    "description": "Mark achieved his career goal after attending our leadership and job search strategy seminars.",
+    "testimonial": "Career Compass gave me the confidence to pursue leadership roles. Highly recommend them!",
+    "rating": 4.8,
+    "date": "12th Feb, 2024"
+  },
+  {
+    "id": 11,
+    "image": "https://i.ibb.co.com/mF6mcBH/sophia-clarke.jpg",
+    "name": "Sophia Clark",
+    "career_goal": "Financial Advisor",
+    "description": "Sophia built her network and gained industry insights to become a financial advisor at a top firm.",
+    "testimonial": "The professional connections I made through Career Compass were invaluable.",
+    "rating": 4.7,
+    "date": "30th Jan, 2024"
+  },
+  {
+    "id": 12,
+    "image": "https://i.ibb.co.com/DpVyJcd/William-brown.jpg",
+    "name": "William Brown",
+    "career_goal": "Civil Engineer",
+    "description": "William took advantage of our mentorship and career assessment services to land a prestigious engineering role.",
+    "testimonial": "Career Compass made the career planning process smooth and insightful. I am very thankful!",
+    "rating": 5.0,
+    "date": "15th Jan, 2024"
+  }
+]
