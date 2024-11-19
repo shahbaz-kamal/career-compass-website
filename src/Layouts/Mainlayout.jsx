@@ -9,7 +9,7 @@ const Mainlayout = () => {
   useEffect(() => {
     AOS.init({
       offset: 50,
-      duration: 1000,
+      duration: 1200,
       easing: "ease-in-out",
     });
   }, []);
