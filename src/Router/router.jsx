@@ -20,7 +20,9 @@ const router = createBrowserRouter([
         loader: async () => {
           const sliderRes = await fetch("/slider.json");
           const sliderData = await sliderRes.json();
-          return { sliderData };
+          const servicesDataRes = await fetch("/services.json");
+          const servicesData = await servicesDataRes.json();
+          return { sliderData, servicesData };
         },
       },
       {
