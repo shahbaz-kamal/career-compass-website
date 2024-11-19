@@ -7,6 +7,7 @@ import SuccessStories from "../Pages/SuccessStories";
 import Events from "../Pages/Events";
 import Profile from "../Pages/Profile";
 import Error from "../Components/Error";
+import Details from "../Pages/Details";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,18 @@ const router = createBrowserRouter([
       {
         path: "/my-profile",
         element: <Profile></Profile>,
+      },
+      {
+        path: "/details/:id",
+        element: <Details></Details>,
+        loader: async ({ params }) => {
+          const servicesDataRes = await fetch("/services.json");
+          const servicesData = await servicesDataRes.json();
+          const filteredData = servicesData.find(
+            (data) => data.id === Number(params.id)
+          );
+          return { filteredData };
+        },
       },
     ],
   },

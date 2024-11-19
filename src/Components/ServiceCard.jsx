@@ -35,15 +35,17 @@ const ServiceCard = ({ singleServiceData }) => {
             {category}
           </p>
           <div className="group">
-            <p className="text-base md:text-xl opacity-80 bg-color-primary inline-block rounded-lg w-auto py-1 px-2 transition-transform duration-300 transform group-hover:scale-110 group-hover:shadow-xl">
+            <p className="text-base md:text-xl  bg-color-secondary inline-block rounded-lg w-auto py-1 px-2 transition-transform duration-300 transform group-hover:scale-110 group-hover:shadow-xl">
               $<span className="font-semibold ">{pricing}</span>
             </p>
           </div>
         </div>
         <hr className="mt-2 mb-2 md:mb-3" />
-        <p className="text-base md:text-xl mb-2 md:mb-3">{description}</p>
+        <p className="text-base md:text-xl mb-2 md:mb-3">
+          {description.slice(0, 200)}...
+        </p>
         <div className="card-actions justify-center">
-          <Link>
+          <Link to={`/details/${id}`}>
             <button className="bg-color-secondary rounded-lg py-2 px-4 text-base md:text-xl font-bold hover:scale-110 transition duration-300">
               Learn More
             </button>
