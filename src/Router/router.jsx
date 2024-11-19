@@ -6,15 +6,22 @@ import AllServices from "../Pages/AllServices";
 import SuccessStories from "../Pages/SuccessStories";
 import Events from "../Pages/Events";
 import Profile from "../Pages/Profile";
+import Error from "../Components/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Mainlayout></Mainlayout>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: "/",
         element: <Home></Home>,
+        loader: async () => {
+          const sliderRes = await fetch("/slider.json");
+          const sliderData = await sliderRes.json();
+          return { sliderData };
+        },
       },
       {
         path: "/all-services",

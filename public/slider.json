@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Career Assessment",
+    "description": "Discover your strengths and interests with our comprehensive career assessment tools.",
+    "image": "https://i.ibb.co.com/sRVY8TX/Career-Assessmen.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Resume Building",
+    "description": "Learn how to create an impactful resume that stands out to employers.",
+    "image": "https://i.ibb.co.com/wLPxWY2/resume-genius-9si2no-VCVH8-unsplash.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Interview Preparation",
+    "description": "Ace your interviews with our expert tips and mock interview sessions.",
+    "image": "https://i.ibb.co.com/FHfStLR/interview-preparation.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Success Stories",
+    "description": "Get inspired by the stories of successful individuals who achieved their career goals.",
+    "image": "https://i.ibb.co.com/3Y53VMj/Success-Stories.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Career Workshops",
+    "description": "Participate in workshops led by industry experts to boost your skills.",
+    "image": "https://i.ibb.co.com/vQGhQ5X/career-workshops.jpg"
+  }
+]
