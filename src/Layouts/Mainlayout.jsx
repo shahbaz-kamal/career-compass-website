@@ -3,6 +3,7 @@ import Navbar from "../Components/Navbar";
 import { Outlet } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from "../Components/Footer";
 
 const Mainlayout = () => {
   useEffect(() => {
@@ -13,16 +14,18 @@ const Mainlayout = () => {
     });
   }, []);
   return (
-    <div className="w-[90%]  mx-auto">
-      <header>
+    <div>
+      <header className="w-[90%]  mx-auto">
         <Navbar></Navbar>
       </header>
 
-      <main>
+      <main className="w-[90%]  mx-auto">
         <Outlet></Outlet>
       </main>
 
-      <footer></footer>
+      <footer className="bg-base-200">
+        <Footer></Footer>
+      </footer>
     </div>
   );
 };
