@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Certified Career Coach",
+    "issuedBy": "National Career Development Association (NCDA)",
+    "description": "Recognized for excellence in guiding individuals toward achieving their career goals through tailored counseling, skill development, and strategic planning.",
+    "year": "2022",
+    "imageUrl": "https://i.ibb.co.com/0tJpmFf/award-1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Top Contributor Award",
+    "issuedBy": "Career Growth Alliance",
+    "description": "Awarded for creating impactful resources, webinars, and tools that have helped thousands of students and professionals make informed career decisions.",
+    "year": "2023",
+    "imageUrl": "https://i.ibb.co.com/82RjmYn/award-2.jpg"
+  }
+]

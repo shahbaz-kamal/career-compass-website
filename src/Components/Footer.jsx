@@ -3,7 +3,7 @@ import logo from "../assets/logo.webp";
 
 const Footer = () => {
   return (
-    <div className="w-[90%]  mx-auto " data-aos="fade-right">
+    <div className="w-[90%]  mx-auto ">
       <footer className="footer  text-base-content p-10  place-items-center md:place-items-start">
         <aside className="flex flex-col justify-center items-center md:block">
           <img

@@ -26,7 +26,9 @@ const router = createBrowserRouter([
           const sliderData = await sliderRes.json();
           const servicesDataRes = await fetch("/services.json");
           const servicesData = await servicesDataRes.json();
-          return { sliderData, servicesData };
+          const achievmentsDataRes = await fetch("achievments.json");
+          const achievmentsData = await achievmentsDataRes.json();
+          return { sliderData, servicesData, achievmentsData };
         },
       },
       {

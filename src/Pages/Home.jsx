@@ -4,9 +4,10 @@ import "swiper/css/bundle";
 import SwiperSlider from "../Components/SwiperSlider";
 import { useActionData, useLoaderData } from "react-router-dom";
 import Services from "../Components/Services";
+import Achievments from "../Components/Achievments";
 
 const Home = () => {
-  const { sliderData, servicesData } = useLoaderData();
+  const { sliderData, servicesData, achievmentsData } = useLoaderData();
 
   return (
     <div>
@@ -16,6 +17,9 @@ const Home = () => {
       </section>
       <section className="mb-8 md:mb-14">
         <Services servicesData={servicesData}></Services>
+      </section>
+      <section className="mb-8 md:mb-14">
+        <Achievments achievmentsData={achievmentsData}></Achievments>
       </section>
     </div>
   );

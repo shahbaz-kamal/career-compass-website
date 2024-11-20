@@ -53,7 +53,7 @@ const UpdateProfileForm = () => {
         </div>
 
         <div className="form-control mt-6">
-          <button className="py-2 px-4 bg-color-secondary rounded-lg">
+          <button className="py-2 px-4 bg-color-secondary rounded-lg hover:scale-110 transition duration-200">
             Update Your Profile
           </button>
         </div>
