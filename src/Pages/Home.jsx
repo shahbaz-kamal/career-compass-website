@@ -5,6 +5,7 @@ import SwiperSlider from "../Components/SwiperSlider";
 import { useActionData, useLoaderData } from "react-router-dom";
 import Services from "../Components/Services";
 import Achievments from "../Components/Achievments";
+import FAQ from "../Components/FAQ";
 
 const Home = () => {
   const { sliderData, servicesData, achievmentsData } = useLoaderData();
@@ -20,6 +21,9 @@ const Home = () => {
       </section>
       <section className="mb-8 md:mb-14">
         <Achievments achievmentsData={achievmentsData}></Achievments>
+      </section>
+      <section className="mb-8 md:mb-14">
+        <FAQ></FAQ>
       </section>
     </div>
   );

@@ -14,11 +14,7 @@ const ServiceCard = ({ singleServiceData }) => {
     image,
   } = singleServiceData;
   return (
-    <div
-      data-aos="fade-up"
-      data-aos-offset="100"
-      className="card bg-base-100  shadow-xl "
-    >
+    <div data-aos="fade-up" className="card bg-base-100  shadow-xl ">
       <figure className="h-[300px] w-full">
         <img className="w-full h-full object-cover" src={image} alt="Shoes" />
       </figure>
