@@ -9,7 +9,8 @@
     "date": "10th Jul, 2024",
     "time": "9:00 AM - 11:00 PM",
     "organizer": "Career Compass Team",
-    "rating": 4.8
+    "rating": 4.8,
+    "total_attended": 120
   },
   {
     "id": 2,
@@ -18,10 +19,11 @@
     "category": "Offline",
     "description": "An intensive training session aimed at enhancing leadership and team management skills.",
     "pricing": 50,
-    "date": "12th Jan, 2025",
+    "date": "12th Jan, 2024",
     "time": "10:00 AM - 4:00 PM",
-    "organizer": "John Carter",
-    "rating": 4.9
+    "organizer": "Sophia Johnson",
+    "rating": 4.9,
+    "total_attended": 85
   },
   {
     "id": 3,
@@ -30,10 +32,11 @@
     "category": "Group",
     "description": "A week-long bootcamp designed to teach participants the essentials of starting and managing a business.",
     "pricing": 150,
-    "date": "19th Feb, 2025",
+    "date": "19th Feb, 2024",
     "time": "9:00 AM - 5:00 PM",
     "organizer": "Career Compass Experts",
-    "rating": 5.0
+    "rating": 5.0,
+    "total_attended": 200
   },
   {
     "id": 4,
@@ -42,10 +45,11 @@
     "category": "Online",
     "description": "Learn how to build a strong personal brand and market yourself effectively in this interactive seminar.",
     "pricing": 30,
-    "date": "25th Nov, 2024",
+    "date": "25th Oct, 2024",
     "time": "7:00 PM - 9:00 PM",
     "organizer": "Sophia Martinez",
-    "rating": 4.7
+    "rating": 4.7,
+    "total_attended": 95
   },
   {
     "id": 5,
@@ -54,10 +58,11 @@
     "category": "Offline",
     "description": "Discover the latest trends in the tech industry from seasoned professionals and recruiters.",
     "pricing": 40,
-    "date": "2nd Dec, 2024",
+    "date": "2nd Nov, 2024",
     "time": "11:00 AM - 1:00 PM",
     "organizer": "Michael Brown",
-    "rating": 4.8
+    "rating": 4.8,
+    "total_attended": 150
   },
   {
     "id": 6,
@@ -66,10 +71,11 @@
     "category": "Group",
     "description": "Participate in mock interviews conducted by experienced professionals to gain real-world experience.",
     "pricing": 25,
-    "date": "10th Jan, 2025",
+    "date": "10th Sep, 2024",
     "time": "2:00 PM - 5:00 PM",
     "organizer": "Emily Johnson",
-    "rating": 4.9
+    "rating": 4.9,
+    "total_attended": 110
   },
   {
     "id": 7,
@@ -78,10 +84,11 @@
     "category": "Online",
     "description": "A beginner-friendly workshop to teach the fundamentals of digital marketing and advertising.",
     "pricing": 35,
-    "date": "8th Dec, 2024",
+    "date": "8th Nov, 2024",
     "time": "5:00 PM - 7:00 PM",
     "organizer": "Rachel Green",
-    "rating": 4.7
+    "rating": 4.7,
+    "total_attended": 130
   },
   {
     "id": 8,
@@ -90,10 +97,11 @@
     "category": "Group",
     "description": "A group session to help individuals identify their ideal career path through interactive exercises.",
     "pricing": 15,
-    "date": "15th Dec, 2024",
+    "date": "15th Oct, 2024",
     "time": "3:00 PM - 5:00 PM",
     "organizer": "Jessica White",
-    "rating": 4.6
+    "rating": 4.6,
+    "total_attended": 70
   },
   {
     "id": 9,
@@ -102,10 +110,11 @@
     "category": "Offline",
     "description": "Learn effective networking strategies to build strong professional relationships and opportunities.",
     "pricing": 45,
-    "date": "22nd Dec, 2024",
+    "date": "22nd Oct, 2024",
     "time": "10:00 AM - 1:00 PM",
     "organizer": "Mark Anderson",
-    "rating": 4.9
+    "rating": 4.9,
+    "total_attended": 140
   },
   {
     "id": 10,
@@ -114,10 +123,11 @@
     "category": "Online",
     "description": "Gain practical knowledge about managing personal finances and making smart investments.",
     "pricing": 20,
-    "date": "18th Jan, 2025",
+    "date": "18th Sep, 2024",
     "time": "6:00 PM - 8:00 PM",
     "organizer": "Sophia Clark",
-    "rating": 4.8
+    "rating": 4.8,
+    "total_attended": 90
   },
   {
     "id": 11,
@@ -126,10 +136,11 @@
     "category": "Group",
     "description": "Develop and polish your communication skills for professional and personal success.",
     "pricing": 30,
-    "date": "27th July, 2018",
+    "date": "27th Jul, 2024",
     "time": "4:00 PM - 6:00 PM",
     "organizer": "Brian Taylor",
-    "rating": 4.7
+    "rating": 4.7,
+    "total_attended": 125
   },
   {
     "id": 12,
@@ -138,9 +149,10 @@
     "category": "Offline",
     "description": "Set realistic and actionable goals to achieve success in your personal and professional life.",
     "pricing": 50,
-    "date": "5th Feb, 2025",
+    "date": "5th Oct, 2024",
     "time": "10:00 AM - 3:00 PM",
     "organizer": "William Brown",
-    "rating": 5.0
+    "rating": 5.0,
+    "total_attended": 105
   }
 ]

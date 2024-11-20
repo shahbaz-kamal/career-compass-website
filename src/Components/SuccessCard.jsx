@@ -50,7 +50,7 @@ const SuccessCard = ({ singleSuccessData }) => {
                 edit={false} // Makes it read-only
               />
             </span>
-            <span className="font-[500]">{rating}</span>
+            <span className="font-[500]">({rating}/5)</span>
           </div>
         </p>
       </div>
