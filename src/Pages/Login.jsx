@@ -1,6 +1,6 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { FcGoogle } from "react-icons/fc";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import SectionTitle from "../Components/SectionTitle";
 import { AuthContext } from "../Provider/AuthProvider";
 import { toast } from "react-toastify";
@@ -10,15 +10,26 @@ const Login = () => {
   // *declaring states
   const [error, setError] = useState(null);
   const [isVisible, setIsVisible] = useState(true);
+  const location = useLocation();
+  console.log(location);
+  const navigate = useNavigate();
   // *getting data from context API
   const { googleSignInUser, loginUser } = useContext(AuthContext);
   // *google sign in functions
   const handleGoogleSignIn = () => {
     googleSignInUser()
-      .then((result) => toast("Google Log In Successful"))
+      .then((result) => {
+        if (location?.state?.from) {
+          navigate(location.state.from);
+        } else {
+          navigate("/");
+        }
+        toast("Google Log In Successful");
+      })
       .catch((err) => {
         setError(err.message);
         toast.error(`${err.message}`);
+        console.log(err.message);
       });
   };
 
@@ -30,6 +41,11 @@ const Login = () => {
     const password = e.target.password.value;
     loginUser(email, password)
       .then((result) => {
+        if (location?.state?.from) {
+          navigate(location.state.from);
+        } else {
+          navigate("/");
+        }
         toast("Login Successful");
       })
       .catch((err) => {
@@ -44,6 +60,16 @@ const Login = () => {
     const dummy = !isVisible;
     setIsVisible(dummy);
   };
+
+  useEffect(() => {
+    if (location?.state?.toastToBeShown) {
+      toast(`${location.state.toastMessage}`);
+      navigate(location.pathname, {
+        state: { ...location.state, toastToBeShown: false },
+        replace: true,
+      });
+    }
+  }, []);
 
   return (
     <div className="flex items-center justify-center flex-col min-h-screen pb-10 ">

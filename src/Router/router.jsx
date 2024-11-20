@@ -10,6 +10,7 @@ import Error from "../Components/Error";
 import Details from "../Pages/Details";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -57,7 +58,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/details/:id",
-        element: <Details></Details>,
+        element: (
+          <PrivateRoute>
+            <Details></Details>
+          </PrivateRoute>
+        ),
         loader: async ({ params }) => {
           const servicesDataRes = await fetch("/services.json");
           const servicesData = await servicesDataRes.json();

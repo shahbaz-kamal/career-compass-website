@@ -2,6 +2,7 @@ import React from "react";
 import { useLoaderData } from "react-router-dom";
 import ReactStars from "react-rating-stars-component";
 import SectionTitle from "../Components/SectionTitle";
+import Comment from "../Components/Comment";
 
 const Details = () => {
   const { filteredData } = useLoaderData();
@@ -86,6 +87,9 @@ const Details = () => {
               />
               <p className="font-semibold">{rating}</p>
             </div>
+            <section className="mt-3 md:mt-4">
+              <Comment></Comment>
+            </section>
           </div>
         </div>
       </div>
