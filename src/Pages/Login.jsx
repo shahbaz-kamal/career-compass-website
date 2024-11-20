@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 import SectionTitle from "../Components/SectionTitle";
 import { AuthContext } from "../Provider/AuthProvider";
 import { toast } from "react-toastify";
+import { FaEye } from "react-icons/fa6";
 
 const Login = () => {
   // *declaring states
   const [error, setError] = useState(null);
+  const [isVisible, setIsVisible] = useState(true);
   // *getting data from context API
   const { googleSignInUser, loginUser } = useContext(AuthContext);
   // *google sign in functions
@@ -34,6 +36,13 @@ const Login = () => {
         setError(err.message);
         toast.warn(`${err.message}`);
       });
+  };
+
+  //   *toggling password field
+
+  const handleToggle = () => {
+    const dummy = !isVisible;
+    setIsVisible(dummy);
   };
 
   return (
@@ -69,17 +78,21 @@ const Login = () => {
               required
             />
           </div>
-          <div className="form-control">
+          <div className="form-control relative">
             <label className="label">
               <span className="text-base md:text-xl">Password</span>
             </label>
             <input
               name="password"
-              type="password"
+              type={isVisible ? "password" : "text"}
               placeholder="password"
               className="input input-bordered"
               required
             />
+
+            <div onClick={handleToggle} className="absolute right-4 bottom-12">
+              <FaEye></FaEye>
+            </div>
             <label className="label">
               <a href="#" className="label-text-alt link link-hover">
                 Forgot password?

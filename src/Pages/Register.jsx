@@ -4,10 +4,12 @@ import { FcGoogle } from "react-icons/fc";
 import SectionTitle from "../Components/SectionTitle";
 import { AuthContext } from "../Provider/AuthProvider";
 import { toast } from "react-toastify";
+import { FaEye } from "react-icons/fa6";
 
 const Register = () => {
   // *declaring states & navigation functions
   const [error, setError] = useState(null);
+  const [isVisible, setIsVisible] = useState(true);
   const navigate = useNavigate();
   // *getting data from context API
   const { googleSignInUser, registerUser, manageProfileUser } =
@@ -59,6 +61,13 @@ const Register = () => {
         setError(err.message);
         toast(`${err.message}`);
       });
+  };
+
+  //   *toggling password field
+
+  const handleToggle = () => {
+    const dummy = !isVisible;
+    setIsVisible(dummy);
   };
   return (
     <div className="flex items-center justify-center flex-col min-h-screen pb-10">
@@ -117,18 +126,22 @@ const Register = () => {
               required
             />
           </div>
-          <div className="form-control">
+          <div className="form-control relative">
             <label className="label">
               <span className="text-base md:text-xl">Password</span>
             </label>
             <input
               name="password"
-              type="password"
+              type={isVisible ? "password" : "text"}
               placeholder="password"
               className="input input-bordered"
               required
             />
+            <div onClick={handleToggle} className="absolute right-4 bottom-4 ">
+              <FaEye></FaEye>
+            </div>
           </div>
+
           <div className="form-control mt-6">
             <button className=" bg-color-primary font-bold text-black rounded-md py-3 px-4 hover:bg-color-secondary hover:border-color-secondary transition duration-300">
               Register
