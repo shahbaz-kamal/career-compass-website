@@ -10,11 +10,13 @@ import {
 import React, { createContext, useEffect, useState } from "react";
 import { auth } from "../firebase/firebase.config";
 export const AuthContext = createContext();
+// *declaring for updating profile
 
 const AuthProvider = ({ children }) => {
   // *Declaring states
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [wantToUpdateProfile, setWantToUpdateProfile] = useState(false);
 
   // * google Sign In Handler
   const googleProvider = new GoogleAuthProvider();
@@ -85,6 +87,8 @@ const AuthProvider = ({ children }) => {
     loginUser,
     registerUser,
     manageProfileUser,
+    setWantToUpdateProfile,
+    wantToUpdateProfile,
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
