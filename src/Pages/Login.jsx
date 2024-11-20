@@ -1,23 +1,62 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
 import SectionTitle from "../Components/SectionTitle";
+import { AuthContext } from "../Provider/AuthProvider";
+import { toast } from "react-toastify";
 
 const Login = () => {
+  // *declaring states
+  const [error, setError] = useState(null);
+  // *getting data from context API
+  const { googleSignInUser, loginUser } = useContext(AuthContext);
+  // *google sign in functions
+  const handleGoogleSignIn = () => {
+    googleSignInUser()
+      .then((result) => toast("Google Log In Successful"))
+      .catch((err) => {
+        setError(err.message);
+        toast.error(`${err.message}`);
+      });
+  };
+
+  //   *Login Functions
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    loginUser(email, password)
+      .then((result) => {
+        toast("Login Successful");
+      })
+      .catch((err) => {
+        setError(err.message);
+        toast.warn(`${err.message}`);
+      });
+  };
+
   return (
     <div className="flex items-center justify-center flex-col min-h-screen pb-10 ">
       <div>
         <SectionTitle sectionTitle={"Login"}></SectionTitle>
       </div>
-      <div className="bg-base-200 rounded-lg w-full md:w-[50%] lg:w-[40%] shadow-lg">
+      <div
+        data-aos="fade-up"
+        data-aos-offset="100"
+        className="bg-base-200 rounded-lg w-full md:w-[50%] lg:w-[40%] shadow-lg"
+      >
         <div className="px-[2rem] pt-[2rem] justify-center items-center w-full">
-          <button className="flex gap-2 items-center justify-center bg-base-300 w-full py-2 rounded-full">
+          <button
+            onClick={handleGoogleSignIn}
+            className="flex gap-2 items-center justify-center bg-base-300 w-full py-2 rounded-full"
+          >
             <FcGoogle size={22}></FcGoogle>
             <span>Sign in with Google</span>
           </button>
         </div>
         <div className="divider px-[2rem] ">OR</div>
-        <form className="card-body mt-0 pt-0">
+        <form onSubmit={handleLogin} className="card-body mt-0 pt-0">
           <div className="form-control">
             <label className="label">
               <span className="text-base md:text-xl">Email</span>

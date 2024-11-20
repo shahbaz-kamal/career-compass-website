@@ -1,22 +1,77 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
+import SectionTitle from "../Components/SectionTitle";
+import { AuthContext } from "../Provider/AuthProvider";
+import { toast } from "react-toastify";
 
 const Register = () => {
+  // *declaring states & navigation functions
+  const [error, setError] = useState(null);
+  const navigate = useNavigate();
+  // *getting data from context API
+  const { googleSignInUser, registerUser, manageProfileUser } =
+    useContext(AuthContext);
+
+  // *google sign in functions
+  const handleGoogleSignIn = () => {
+    googleSignInUser()
+      .then((result) => {
+        toast("Google Log In Successful");
+        setError(null);
+      })
+      .catch((err) => {
+        setError(err.message);
+        toast.error(`${error}`);
+      });
+  };
+  //   *register with email & password
+  const handleRegister = (e) => {
+    e.preventDefault();
+    const name = e.target.name.value;
+    const photo = e.target.photo.value;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+    console.log(name, photo, email, password);
+    registerUser(email, password)
+      .then((result) => {
+        manageProfileUser(name, photo)
+          .then(() => {
+            toast("Registration Process Successful");
+            console.log(result.user);
+          })
+          .catch((errrr) => {
+            setError(errrr.message);
+            toast(`${errrr.message}`);
+          });
+      })
+      .catch((err) => {
+        setError(err.message);
+        toast(`${err.message}`);
+      });
+  };
   return (
     <div className="flex items-center justify-center flex-col min-h-screen pb-10">
       <div>
-        <h1 className="font-bold text-5xl mb-6">Register</h1>
+        <SectionTitle sectionTitle={"Register"}></SectionTitle>
       </div>
-      <div className="bg-base-200 rounded-lg w-full md:w-[50%] lg:w-[40%] shadow-lg">
+      <div
+        data-aos="fade-up"
+        data-aos-offset="100"
+        className="bg-base-200 rounded-lg w-full md:w-[50%] lg:w-[40%] shadow-lg"
+      >
         <div className="px-[2rem] pt-[2rem] justify-center items-center w-full">
-          <button className="flex gap-2 items-center justify-center bg-base-300 w-full py-2 rounded-full">
+          <button
+            onClick={handleGoogleSignIn}
+            className="flex gap-2 items-center justify-center bg-base-300 w-full py-2 rounded-full"
+          >
             <FcGoogle size={22}></FcGoogle>
             <span>Sign in with Google</span>
           </button>
         </div>
         <div className="divider px-[2rem] ">OR</div>
-        <form className="card-body py-0">
+        <form onSubmit={handleRegister} className="card-body py-0">
           <div className="form-control">
             <label className="label">
               <span className="text-base md:text-xl">Name</span>

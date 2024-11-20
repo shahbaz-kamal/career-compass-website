@@ -9,7 +9,7 @@ const SuccessCard = ({ singleSuccessData }) => {
     <div
       data-aos="fade-up"
       data-aos-offset="100"
-      className="card bg-base-200  shadow-xl mb-6 md:mb-14"
+      className="card bg-base-200  shadow-xl "
     >
       <figure className="px-10 pt-10 h-[300px] w-full">
         <img

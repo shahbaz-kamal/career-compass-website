@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../src/assets/logo.webp";
 import "./Navbar.css";
+import { AuthContext } from "../Provider/AuthProvider";
+import Loading from "./Loading";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
+  const { user, signOutUser, loading } = useContext(AuthContext);
+
+  const handleSignOut = () => {
+    signOutUser();
+    toast("Log Out Successful");
+  };
+
   const links = (
     <>
       <li>
@@ -23,6 +33,10 @@ const Navbar = () => {
       </li>
     </>
   );
+
+  if (loading) {
+    return <Loading></Loading>;
+  }
   return (
     <div className="navbar  py-4 md:py-6 px-0 ">
       <div className="navbar-start gap-2 items-center">
@@ -74,12 +88,38 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-end">
-        <Link
-          to={"/log-in"}
-          className="bg-color-primary py-2 px-3 rounded-lg font-bold text-base md:text-xl lg:text-2xl"
-        >
-          Log In
-        </Link>
+        {user && user?.email ? (
+          <div className="flex gap-2 items-center">
+            {user?.photoURL ? (
+              <div className="w-10 h-10 rounded-full">
+                <img
+                  className="w-full h-full object-cover rounded-full"
+                  src={user.photoURL}
+                  alt="User Profile"
+                />
+              </div>
+            ) : (
+              <div className="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center">
+                <span className="text-sm text-gray-700"></span>
+              </div>
+            )}
+
+            <Link
+              onClick={handleSignOut}
+              to={"/"}
+              className="bg-color-primary py-2 px-3 rounded-lg font-bold text-base md:text-xl lg:text-2xl"
+            >
+              Log Out
+            </Link>
+          </div>
+        ) : (
+          <Link
+            to={"/log-in"}
+            className="bg-color-primary py-2 px-3 rounded-lg font-bold text-base md:text-xl lg:text-2xl"
+          >
+            Log In
+          </Link>
+        )}
       </div>
     </div>
   );

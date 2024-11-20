@@ -15,7 +15,7 @@ const EventCard = ({ singleEventData }) => {
     image,
     total_attended,
   } = singleEventData;
-  console.log(image);
+
   return (
     <div>
       <div

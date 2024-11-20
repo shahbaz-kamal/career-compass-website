@@ -7,7 +7,7 @@ import Services from "../Components/Services";
 
 const Home = () => {
   const { sliderData, servicesData } = useLoaderData();
-  console.log(sliderData);
+
   return (
     <div>
       {/* swipper section */}

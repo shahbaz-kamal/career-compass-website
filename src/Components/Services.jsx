@@ -4,7 +4,6 @@ import ServiceCard from "./ServiceCard";
 import { Link } from "react-router-dom";
 
 const Services = ({ servicesData }) => {
-  console.log(servicesData);
   return (
     <div>
       <header data-aos="fade-up" data-aos-offset="100" className="">

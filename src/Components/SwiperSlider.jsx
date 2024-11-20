@@ -12,7 +12,6 @@ const SwiperSlider = ({ sliderData }) => {
   const slide3 = sliderData[2];
   const slide4 = sliderData[3];
   const slide5 = sliderData[4];
-  console.log(slide1, slide2, slide3, slide4, slide5);
 
   return (
     <Swiper
@@ -30,7 +29,7 @@ const SwiperSlider = ({ sliderData }) => {
             src={slide1.image}
             alt=""
           />
-          <div class="absolute inset-0 bg-black bg-opacity-50 rounded-xl"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-50 rounded-xl"></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <h1 className="text-color-primary font-bold text-xl md:text-3xl lg:text-6xl text-center">
               {slide1.title}
@@ -48,7 +47,7 @@ const SwiperSlider = ({ sliderData }) => {
             src={slide2.image}
             alt=""
           />
-          <div class="absolute inset-0 bg-black bg-opacity-50 rounded-xl"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-50 rounded-xl"></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <h1 className="text-color-primary font-bold text-xl md:text-3xl lg:text-6xl text-center">
               {slide2.title}
@@ -66,7 +65,7 @@ const SwiperSlider = ({ sliderData }) => {
             src={slide3.image}
             alt=""
           />
-          <div class="absolute inset-0 bg-black bg-opacity-50 rounded-xl"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-50 rounded-xl"></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <h1 className="text-color-primary font-bold text-xl md:text-3xl lg:text-6xl text-center">
               {slide3.title}
@@ -84,7 +83,7 @@ const SwiperSlider = ({ sliderData }) => {
             src={slide4.image}
             alt=""
           />
-          <div class="absolute inset-0 bg-black bg-opacity-50 rounded-xl"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-50 rounded-xl"></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <h1 className="text-color-primary font-bold text-xl md:text-3xl lg:text-6xl text-center">
               {slide4.title}
@@ -102,7 +101,7 @@ const SwiperSlider = ({ sliderData }) => {
             src={slide5.image}
             alt=""
           />
-          <div class="absolute inset-0 bg-black bg-opacity-50 rounded-xl"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-50 rounded-xl"></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <h1 className="text-color-primary font-bold text-xl md:text-3xl lg:text-6xl text-center">
               {slide5.title}

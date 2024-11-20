@@ -11,7 +11,7 @@ const SuccessStories = () => {
       <header>
         <SectionTitle sectionTitle={"Success Stories"}></SectionTitle>
       </header>
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8">
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8 mb-6 md:mb-14">
         {successData.map((singleSuccessData) => (
           <SuccessCard
             key={singleSuccessData.id}
