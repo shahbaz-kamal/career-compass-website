@@ -74,7 +74,10 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-end">
-        <Link className="bg-color-primary py-2 px-3 rounded-lg font-bold text-base md:text-xl lg:text-2xl">
+        <Link
+          to={"/log-in"}
+          className="bg-color-primary py-2 px-3 rounded-lg font-bold text-base md:text-xl lg:text-2xl"
+        >
           Log In
         </Link>
       </div>

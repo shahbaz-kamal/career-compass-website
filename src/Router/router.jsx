@@ -8,6 +8,8 @@ import Events from "../Pages/Events";
 import Profile from "../Pages/Profile";
 import Error from "../Components/Error";
 import Details from "../Pages/Details";
+import Login from "../Pages/Login";
+import Register from "../Pages/Register";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +46,14 @@ const router = createBrowserRouter([
       {
         path: "/my-profile",
         element: <Profile></Profile>,
+      },
+      {
+        path: "/log-in",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
       },
       {
         path: "/details/:id",
