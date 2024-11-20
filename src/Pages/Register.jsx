@@ -34,6 +34,15 @@ const Register = () => {
     const password = e.target.password.value;
 
     console.log(name, photo, email, password);
+    if (password.length < 6) {
+      return toast("Password must be at least 6 characters");
+    }
+    if (!/[A-Z]/.test(password)) {
+      return toast("Password must contain at least 1 uppercase letter");
+    }
+    if (!/[a-z]/.test(password)) {
+      return toast("Password must contain at least 1 lowercase letter");
+    }
     registerUser(email, password)
       .then((result) => {
         manageProfileUser(name, photo)

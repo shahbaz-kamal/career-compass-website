@@ -91,12 +91,15 @@ const Navbar = () => {
         {user && user?.email ? (
           <div className="flex gap-2 items-center">
             {user?.photoURL ? (
-              <div className="w-10 h-10 rounded-full">
+              <div className="group relative w-10 h-10 rounded-full">
                 <img
-                  className="w-full h-full object-cover rounded-full"
+                  className="  w-full h-full object-cover rounded-full"
                   src={user.photoURL}
                   alt="User Profile"
                 />
+                <div className="absolute left-1/2 top-full mt-[5px] mb-2 w-max -translate-x-1/2 bg-color-secondary text-white text-sm rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {user.displayName || "User name not available"}
+                </div>
               </div>
             ) : (
               <div className="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center">
