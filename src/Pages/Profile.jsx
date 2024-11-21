@@ -3,7 +3,7 @@ import { AuthContext } from "../Provider/AuthProvider";
 import { MdEmail } from "react-icons/md";
 import UpdateProfileForm from "../Components/UpdateProfileForm";
 import SectionTitle from "../Components/SectionTitle";
-
+import { IoMdPhotos } from "react-icons/io";
 const Profile = () => {
   const { user, setWantToUpdateProfile, wantToUpdateProfile } =
     useContext(AuthContext);
@@ -37,6 +37,11 @@ const Profile = () => {
                 <MdEmail></MdEmail>
                 <p>{user.email}</p>
               </div>
+
+              <div className="flex items-center  gap-0 text-base md:text-lg w-full">
+                <IoMdPhotos></IoMdPhotos>
+                <p>{user.photoURL.slice(0, 40)}</p>
+              </div>
             </div>
             <UpdateProfileForm></UpdateProfileForm>
           </div>
@@ -54,6 +59,10 @@ const Profile = () => {
               <div className="flex items-center justify-center gap-2 text-base md:text-lg">
                 <MdEmail></MdEmail>
                 <p>{user.email}</p>
+              </div>
+              <div className="flex items-center  gap-0 text-base md:text-lg w-full">
+                <IoMdPhotos></IoMdPhotos>
+                <p>{user.photoURL.slice(0, 40)}</p>
               </div>
               {!wantToUpdateProfile ? (
                 <div className="card-actions">

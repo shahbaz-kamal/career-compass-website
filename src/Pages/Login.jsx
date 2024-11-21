@@ -53,6 +53,8 @@ const Login = () => {
         setError(err.message);
         toast.warn(`${err.message}`);
       });
+    e.target.email.value = "";
+    e.target.password.value = "";
   };
 
   //   *toggling password field

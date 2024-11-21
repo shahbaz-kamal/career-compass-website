@@ -51,6 +51,7 @@ const Register = () => {
           .then(() => {
             toast("Registration Process Successful");
             console.log(result.user);
+            navigate("/");
           })
           .catch((errrr) => {
             setError(errrr.message);
@@ -61,6 +62,10 @@ const Register = () => {
         setError(err.message);
         toast(`${err.message}`);
       });
+    e.target.name.value = "";
+    e.target.photo.value = "";
+    e.target.email.value = "";
+    e.target.password.value = "";
   };
 
   //   *toggling password field
