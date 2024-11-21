@@ -3,12 +3,12 @@ import { getAuth } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBEOpIUj9v2hoYp9zeWIhcUmOgv3kwFp2M",
-  authDomain: "career-compass-website.firebaseapp.com",
-  projectId: "career-compass-website",
-  storageBucket: "career-compass-website.firebasestorage.app",
-  messagingSenderId: "244777493721",
-  appId: "1:244777493721:web:d23c9eb41d98346fcccac8",
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId,
 };
 
 // Initialize Firebase
