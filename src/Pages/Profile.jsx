@@ -38,9 +38,11 @@ const Profile = () => {
                 <p>{user.email}</p>
               </div>
 
-              <div className="flex items-center  gap-0 text-base md:text-lg w-full">
-                <IoMdPhotos></IoMdPhotos>
-                <p>{user.photoURL.slice(0, 40)}</p>
+              <div className="flex items-start  gap-2 text-base md:text-lg ">
+                <div className="mt-1">
+                  <IoMdPhotos></IoMdPhotos>
+                </div>
+                <p className="w-[90%]">{user.photoURL}</p>
               </div>
             </div>
             <UpdateProfileForm></UpdateProfileForm>
@@ -60,9 +62,11 @@ const Profile = () => {
                 <MdEmail></MdEmail>
                 <p>{user.email}</p>
               </div>
-              <div className="flex items-center  gap-0 text-base md:text-lg w-full">
-                <IoMdPhotos></IoMdPhotos>
-                <p>{user.photoURL.slice(0, 40)}</p>
+              <div className="flex items-start  gap-2 text-base md:text-lg ">
+                <div className="mt-1">
+                  <IoMdPhotos></IoMdPhotos>
+                </div>
+                <p className="w-[90%]">{user.photoURL}</p>
               </div>
               {!wantToUpdateProfile ? (
                 <div className="card-actions">
