@@ -36,7 +36,7 @@ const FAQ = () => {
             </div>
           </div>
           <div className="collapse collapse-arrow join-item border-color-primary-40 border">
-            <input type="radio" name="my-accordion-4" defaultChecked />
+            <input type="radio" name="my-accordion-4" />
             <div className="collapse-title text-lg md:text-2xl font-medium">
               2. How do I create an account on Career Compass?
             </div>
@@ -59,7 +59,7 @@ const FAQ = () => {
             </div>
           </div>
           <div className="collapse collapse-arrow join-item border-color-primary-40 border">
-            <input type="radio" name="my-accordion-4" defaultChecked />
+            <input type="radio" name="my-accordion-4" />
             <div className="collapse-title text-lg md:text-2xl font-medium">
               3. Can Career Compass help me with job search?
             </div>
@@ -83,7 +83,7 @@ const FAQ = () => {
             </div>
           </div>
           <div className="collapse collapse-arrow join-item border-color-primary-40 border">
-            <input type="radio" name="my-accordion-4" defaultChecked />
+            <input type="radio" name="my-accordion-4" />
             <div className="collapse-title text-lg md:text-2xl font-medium">
               4. Is Career Compass only for people looking for new jobs?
             </div>

@@ -11,6 +11,7 @@ import Details from "../Pages/Details";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import PrivateRoute from "./PrivateRoute";
+import ForgetPassword from "../Pages/ForgetPassword";
 
 const router = createBrowserRouter([
   {
@@ -61,6 +62,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/forget-password",
+        element: <ForgetPassword></ForgetPassword>,
       },
       {
         path: "/details/:id",

@@ -10,6 +10,7 @@ const Login = () => {
   // *declaring states
   const [error, setError] = useState(null);
   const [isVisible, setIsVisible] = useState(true);
+  const [email, setEmail] = useState(null);
   const location = useLocation();
   console.log(location);
   const navigate = useNavigate();
@@ -61,6 +62,16 @@ const Login = () => {
     setIsVisible(dummy);
   };
 
+  // *handling email to send to forget password
+
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleForgetPassword = () => {
+    navigate("/forget-password", { state: { email } });
+  };
+
   useEffect(() => {
     if (location?.state?.toastToBeShown) {
       toast(`${location.state.toastMessage}`);
@@ -97,6 +108,7 @@ const Login = () => {
               <span className="text-base md:text-xl">Email</span>
             </label>
             <input
+              onChange={handleEmail}
               name="email"
               type="email"
               placeholder="email"
@@ -120,9 +132,12 @@ const Login = () => {
               <FaEye></FaEye>
             </div>
             <label className="label">
-              <a href="#" className="label-text-alt link link-hover">
+              <button
+                onClick={handleForgetPassword}
+                className="label-text-alt link link-hover"
+              >
                 Forgot password?
-              </a>
+              </button>
             </label>
           </div>
           <div className="form-control mt-6">
@@ -131,12 +146,6 @@ const Login = () => {
             </button>
           </div>
         </form>
-
-        {/* {error && (
-          <p className="px-[2rem] font-bold text-red-500 text-center">
-            {error}
-          </p>
-        )} */}
 
         <p className="p-[2rem] text-center font-semibold">
           New to this Website?{" "}
