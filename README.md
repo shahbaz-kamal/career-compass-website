@@ -32,7 +32,8 @@
 
 ###
 
-<h3 align="left">🛠 Technology Used</h3>
+##🛠 Technology Used
+<!-- <h3 class:"font-bold" align="left"></h3> -->
 
 ###
 
