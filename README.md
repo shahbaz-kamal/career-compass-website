@@ -65,5 +65,9 @@
 ```bash
   git clone https://github.com/shahbaz-kamal/career-compass-website.git
 ```
+1. Change your directory to the cloned folder by
+…```
+
+
 
 ###
