@@ -65,9 +65,30 @@
 ```bash
   git clone https://github.com/shahbaz-kamal/career-compass-website.git
 ```
-1. Change your directory to the cloned folder by
-…```
+2. Change your directory to the cloned folder by
 
+```bash
+  cd folder_name
+```
+3. Run the following to install dependencies:
 
+```bash
+npm install
+```
+4. Run the following to install dependencies:
 
+```bash
+npm install
+```
+5. Create an .env.local folder & use your firebase credintials as follows:
+
+```bash
+VITE_apiKey=your_api_key
+VITE_authDomain=your_auth_domain
+```
+6. Run the following command and open the website locally on port 5173:
+
+```bash
+npm run dev
+```
 ###
