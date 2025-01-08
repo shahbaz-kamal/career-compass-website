@@ -85,6 +85,10 @@ npm install
 ```bash
 VITE_apiKey=your_api_key
 VITE_authDomain=your_auth_domain
+VITE_projectId=your_project_id
+VITE_storageBucket=your_storage_bucket
+VITE_messagingSenderId=your_messagingSenderId
+VITE_appId=your_api_id
 ```
 6. Run the following command and open the website locally on port 5173:
 
