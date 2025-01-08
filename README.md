@@ -11,8 +11,8 @@
 <p align="left">Career Compass is a responsive and user-friendly web application designed to assist users in their career growth by providing personalized guidance and resources. Built with React, Firebase Authentication, and Tailwind CSS, it features secure login, password management, customizable profiles, and a dedicated section to showcase certifications and achievements. Users can access curated career resources and FAQs to make informed decisions, while the platform ensures scalability and modern design best practices. Perfect for those seeking a seamless and intuitive career development tool.</p>
 
 ###
-
-<h3 align="left">Live Link</h3>
+## 🔗 Live Link
+<!-- <h3 align="left"></h3> -->
 
 ###
 
@@ -20,19 +20,20 @@
 
 ###
 
-<h3 align="left">✨ Features:</h3>
+## ✨ Features:
 
 ###
-- **Personalized Career Advice:**:  Receive personalized career guidance based on user profiles and preferences.
+
+- **Personalized Career Advice:**: Receive personalized career guidance based on user profiles and preferences.
 - **User Authentication:**: Secure user login and sign-up using Firebase authentication, including Google Sign-in for easier access
 - **Profile Management:**:Users can update their profile details, such as name & photo
 - **Forgot Password Functionality:**:A functional password recovery system with redirecting users to Gmail for password reset instructions.
 - **Responsive Design:**:Fully responsive layout using Tailwind CSS, ensuring seamless user experience on both desktop and mobile devices.
 
-
 ###
 
 ## 🛠 Technology Used
+
 <!-- <h3 class:"font-bold" align="left"></h3> -->
 
 ###
@@ -48,8 +49,8 @@
 </div>
 
 ###
-
-<h3 align="left">💥 Dependencies:</h3>
+## 💥 Dependencies:
+<!-- <h3 align="left"></h3> -->
 
 ###
 
