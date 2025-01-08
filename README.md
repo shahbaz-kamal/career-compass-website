@@ -57,7 +57,13 @@
 <h3 align="left">"aos": "^2.3.4",<br>    "firebase": "^11.0.2",<br>    "localforage": "^1.10.0",<br>    "match-sorter": "^8.0.0",<br>    "react": "^18.3.1",<br>    "react-dom": "^18.3.1",<br>    "react-icons": "^5.3.0",<br>    "react-rating-stars-component": "^2.2.0",<br>    "react-router-dom": "^6.28.0",<br>    "react-toastify": "^10.0.6",<br>    "sort-by": "^1.2.0",<br>    "swiper": "^11.1.15"</h3>
 
 ###
+## 🔧 Installation Guidline:
+<!-- <h3 align="left"></h3> -->
 
-<h3 align="left">🔧  Installation Guidline:</h3>
+1. First clone the project by running
+
+```bash
+  git clone https://github.com/shahbaz-kamal/career-compass-website.git
+```
 
 ###
