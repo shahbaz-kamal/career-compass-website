@@ -16,7 +16,7 @@ const Home = () => {
       <section className="mb-8 md:mb-14">
         <SwiperSlider sliderData={sliderData}></SwiperSlider>
       </section>
-      <section className="mb-8 md:mb-14">
+      <section className="mb-8 md:mb-0">
         <Services servicesData={servicesData}></Services>
       </section>
       <section className="mb-8 md:mb-14">

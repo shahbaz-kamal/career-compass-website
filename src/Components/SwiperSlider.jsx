@@ -14,7 +14,7 @@ const SwiperSlider = ({ sliderData }) => {
   const slide5 = sliderData[4];
 
   return (
-    <Swiper
+    <Swiper className="h-[70vh] rounded-xl"
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
       slidesPerView={1}
@@ -22,8 +22,8 @@ const SwiperSlider = ({ sliderData }) => {
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
     >
-      <SwiperSlide>
-        <div className="w-full h-[100vh] rounded-xl relative">
+      <SwiperSlide className="h-[70vh]">
+        <div className="w-full h-[70vh] rounded-xl relative">
           <img
             className="w-full h-full object-cover rounded-xl"
             src={slide1.image}
@@ -40,8 +40,8 @@ const SwiperSlider = ({ sliderData }) => {
           </div>
         </div>
       </SwiperSlide>
-      <SwiperSlide>
-        <div className="w-full h-[100vh] rounded-xl relative">
+      <SwiperSlide className="h-[70vh]">
+        <div className="w-full h-[70vh] rounded-xl relative">
           <img
             className="w-full h-full object-cover rounded-xl"
             src={slide2.image}
@@ -59,7 +59,7 @@ const SwiperSlider = ({ sliderData }) => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="w-full h-[100vh] rounded-xl relative">
+        <div className="w-full h-[70vh] rounded-xl relative">
           <img
             className="w-full h-full object-cover rounded-xl"
             src={slide3.image}
@@ -77,7 +77,7 @@ const SwiperSlider = ({ sliderData }) => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="w-full h-[100vh] rounded-xl relative">
+        <div className="w-full h-[70vh] rounded-xl relative">
           <img
             className="w-full h-full object-cover rounded-xl"
             src={slide4.image}
@@ -95,7 +95,7 @@ const SwiperSlider = ({ sliderData }) => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="w-full h-[100vh] rounded-xl relative">
+        <div className="w-full h-[70vh] rounded-xl relative">
           <img
             className="w-full h-full object-cover rounded-xl"
             src={slide5.image}
