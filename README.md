@@ -80,7 +80,7 @@ npm install
 ```bash
 npm install
 ```
-5. Create an .env.local folder & use your firebase credintials as follows:
+5. Create a firebase project and a file named .env.local  in your root folder & use your firebase credintials as follows:
 
 ```bash
 VITE_apiKey=your_api_key
