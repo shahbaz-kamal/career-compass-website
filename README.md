@@ -24,8 +24,11 @@
 
 ###
 - **Personalized Career Advice:**:  Receive personalized career guidance based on user profiles and preferences.
+- **User Authentication:**: Secure user login and sign-up using Firebase authentication, including Google Sign-in for easier access
+- **Profile Management:**:Users can update their profile details, such as name & photo
+- **Forgot Password Functionality:**:A functional password recovery system with redirecting users to Gmail for password reset instructions.
+- **Responsive Design:**:Fully responsive layout using Tailwind CSS, ensuring seamless user experience on both desktop and mobile devices.
 
-<h3 align="left">• Personalized Career Advice: Receive personalized career guidance based on user profiles and preferences.<br>• User Authentication: Secure user login and sign-up using Firebase authentication, including Google Sign-in for easier access.<br>• Profile Management: Users can update their profile details, such as name & photo<br>• Forgot Password Functionality: A functional password recovery system with redirecting users to Gmail for password reset instructions.<br>• Forgot Password Functionality: A functional password recovery system with redirecting users to Gmail for password reset instructions.<br>•Responsive Design: Fully responsive layout using Tailwind CSS, ensuring seamless user experience on both desktop and mobile devices.</h3>
 
 ###
 
