@@ -23,6 +23,7 @@
 <h3 align="left">✨ Features:</h3>
 
 ###
+- **Personalized Career Advice:**:  Receive personalized career guidance based on user profiles and preferences.
 
 <h3 align="left">• Personalized Career Advice: Receive personalized career guidance based on user profiles and preferences.<br>• User Authentication: Secure user login and sign-up using Firebase authentication, including Google Sign-in for easier access.<br>• Profile Management: Users can update their profile details, such as name & photo<br>• Forgot Password Functionality: A functional password recovery system with redirecting users to Gmail for password reset instructions.<br>• Forgot Password Functionality: A functional password recovery system with redirecting users to Gmail for password reset instructions.<br>•Responsive Design: Fully responsive layout using Tailwind CSS, ensuring seamless user experience on both desktop and mobile devices.</h3>
 
